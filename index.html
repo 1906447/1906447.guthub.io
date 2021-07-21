@@ -1,0 +1,54 @@
+<! DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name= "author" content="チュウヨンセン"/>
+        <meta name="keywords" content="html, css, javascript"/>
+        <title>じゃんけんゲーム</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>じゃんけんゲーム</h1>
+        </header>
+        
+        <div>
+            <p>WELCOME TO じゃんけんゲーム</p>
+            <p>まず、ゲームのルールについて説明します。</p>
+            
+            <h2>じゃんけんゲームの説明</h2>
+            <p>グー、チョキ、パーの3つの手があり、グーはチョキに、チョキはパーに、パーはグーに、それぞれ勝ちます。</p>
+            <p>同じ手の場合はアイコとなって引き分けです。</p>
+            <p>ここで作成するじゃんけんゲームは、人間対コンピュータで戦います。</p>
+            
+            
+            <h2>ゲームをスタートしましょう！</h2>
+            <p>以下の中から、一つの選択を選んで、ボタンをクリックすることで、勝負が決まりになります。</p>
+            
+            <button type="button" onclick="game(0)">グー</button>
+            <button type="button" onclick="game(1)">チョキ</button>
+            <button type="button" onclick="game(2)">パー</button>
+            
+            <table>
+                <tr>
+                    <th><div id="uHand"></div></th>
+                    <th><div id="cHand"></div></th>
+                    <th><div id="res"></div></th>
+                </tr>
+                <tr>
+                    <th><div id="res_uHand"></div></th>
+                    <th><div id="res_cHand"></div></th>
+                    <th><div id="res_gm"></div></th>
+                </tr>
+            </table>
+            
+            
+            
+            <div class="score">SCORE　｜　</div>
+            <div class="ritsu">勝利率　　｜　</div>
+        </div>
+        
+        <script src="janken.js"></script>
+    </body>
+</html>
